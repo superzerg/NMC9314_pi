@@ -49,14 +49,18 @@ V) CONNECTION
 
 VI) INSTALL
 ===============
-- install the C library for Raspberry Pi (http://www.open.com.au/mikem/bcm2835/index.html)
-- get the NMC9314_pi files at https://github,com/superzerg/NMC9314_pi
-- compile with:
+1. install the C library for Raspberry Pi (http://www.open.com.au/mikem/bcm2835/index.html)
+2. get the NMC9314_pi files at https://github,com/superzerg/NMC9314_pi
+3. compile with:
 	gcc -o NMC9314B_bit_banged -l rt NMC9314B_bit_banged.c -l bcm2835 -O3
-- detailed usage instruction are given with: 
+4. detailed usage instruction are given with: 
 	./NMC9314B_bit_banged -h
 
-VII) LICENCE
+VII) LOGIC STATES DURING CONSECUTIVE READ 
+==========
+![logic states](read.png)
+
+VIII) LICENCE
 ===============
 Copyright (C) 1994, 1995, 1996, 1999, 2000, 2001, 2002, 2004, 2005,
 2006, 2007, 2008, 2009 Free Software Foundation, Inc.
@@ -66,7 +70,7 @@ are permitted in any medium without royalty provided the copyright
 notice and this notice are preserved.  This file is offered as-is,
 without warranty of any kind.
 
-VIII) REMARKS
+IX) REMARKS
 ===============
 The microwire protocol is bit banged as I did not succeeded to use the SPI driver to send or recived message length of fractional bytes length (for example 9 bits for a read instruction).
 
