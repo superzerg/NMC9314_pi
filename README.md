@@ -41,8 +41,8 @@ V) CONNECTION
 	                 |R|
 	                 |2|
 	                 |_|
-		          |
-		         GND 
+	                  |
+	                 GND 
 
 	R1=32 kohms
 	R2=68 kohms
