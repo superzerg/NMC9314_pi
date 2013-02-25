@@ -537,7 +537,7 @@ void usage(char *program_name)
 	printf("\t -a |--address addr: address addr to be erased/wrote/read (integer between 0 and 63) eg -a 1. If more than 1 operation is performed, same address will be used each time.\n");
 	printf("\t -d|--data data: 4 hexadecimal caracters to be written eg. \"-d FE01\".\n");
 	printf("\t -v|--verbose : be verbose (default).\n");
-	printf("\t -b|--brief : be brief (not verbose, not implemented).\n");
+	printf("\t -b|--brief : be brief (not verbose).\n");
 }
 
 
